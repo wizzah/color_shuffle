@@ -4,6 +4,8 @@ Shuffles colors in gifs and outputs the recolored gif- this is a lot like [Pixel
 ## input
 ![BB-8 gif](example_input.gif "Input")
 
+ I found this bb-8 through google images
+
 ## output
 ![BB-8 with altered colors](example_output.gif "Output")
 
@@ -26,3 +28,6 @@ you can use pip to install that specific commit, I believe this is it:
 - then `python process.py` to apply any cool color changes
 - `python stitch.py` to put humpty dumpty back together again
 - if you make something really cool, let me know
+
+## fun thing to note
+I don't have any code that clears out the output folder. If you extract a gif with lots of frames, and then one with a few frames, it isn't going to delete the leftover frames.
