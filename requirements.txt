@@ -1,0 +1,5 @@
+imageio==2.1.2.dev0
+numpy==1.12.1
+olefile==0.44
+Pillow==4.1.0
+virtualenv==15.1.0
