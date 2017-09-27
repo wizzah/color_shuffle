@@ -11,14 +11,10 @@ def index():
 
 @app.route("/upload", methods=['GET', 'POST'])
 def img_upload():
-    print(request.files)
     if request.method == 'POST':
-        print(request.files["uploaded"])
         gif = request.files["uploaded"]
         extract_gif.extract_gif(gif)
         process.process_gif()
         result = stitch.stitch()
-        print(result)
-        # return "Hello World!"
         return send_file(result, 'image/gif')
 
