@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Filtration System</title>
+</head>
+<body>
+    <form enctype="multipart/form-data" action="/upload" method="post">
+      <input type="file" id="uploader" name="uploaded" />
+      <input type="submit" id="submit" disabled />
+  </form>
+  <script>
+    // document.ready(function() {
+      var uploader = document.getElementById("uploader");
+      console.log(uploader);
+      uploader.addEventListener("change", function() {
+        console.log(this.files);
+        if(this.files) {
+            if(this.files[0].type == "image/gif") {
+                document.getElementById("submit").disabled = false;
+                console.log("yay");
+            } else {
+                document.getElementById("submit").disabled = true;
+            }
+        } else {
+            document.getElementById("submit").disabled = true;
+        }
+      }, false);
+    // });
+
+  </script>
+</body>
+</html>

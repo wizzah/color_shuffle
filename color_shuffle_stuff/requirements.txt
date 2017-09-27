@@ -1,0 +1,11 @@
+click==6.7
+Flask==0.12.2
+imageio==2.1.2.dev0
+itsdangerous==0.24
+Jinja2==2.9.6
+MarkupSafe==1.0
+numpy==1.12.1
+olefile==0.44
+Pillow==4.1.0
+virtualenv==15.1.0
+Werkzeug==0.12.2
